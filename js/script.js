@@ -7,10 +7,12 @@
 
 
 
+// richiamo l l id in cui vorrò scrivere 
+const mainContainer = document.getElementById("container");
 
 
 // Array di oggetti 
-[
+const icone = [
 	{
 		name: 'cat',
 		prefix: 'fa-',
@@ -124,3 +126,15 @@
 		color: 'blue'
 	}
 ];
+
+
+icone.forEach((oggetto)=> {
+    console.log(oggetto.name);
+    let innerHtml = `
+    <div> 
+         <i class="${oggetto.family} ${oggetto.prefix}${oggetto.name}"></i>
+         <div> ${oggetto.name} </div>
+     </div>`
+    mainContainer.innerHTML += innerHtml
+})
+
