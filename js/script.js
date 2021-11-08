@@ -129,10 +129,10 @@ const icone = [
 
 
 icone.forEach((oggetto)=> {
-    console.log(oggetto.name);
+    // console.log(oggetto.name);
     let innerHtml = `
     <div> 
-         <i class="${oggetto.family} ${oggetto.prefix}${oggetto.name}"></i>
+         <i class="${oggetto.family} ${oggetto.prefix}${oggetto.name} ${oggetto.color}"></i>
          <div> ${oggetto.name} </div>
      </div>`
     mainContainer.innerHTML += innerHtml
