@@ -7,3 +7,43 @@
 .orange{
     color: orange;
 }
+
+
+#container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 20px;
+background-color: lightgray;
+}
+
+.icone_struttura{
+    width: 17%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 70px;
+}
+.fas{
+    font-size: 30px;
+}
+
+/* titolo */
+header{
+    color: #2dafe3;
+    padding-left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+#filtra{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #2dafe3;
+    color: white;
+    font-size: 20px;
+}

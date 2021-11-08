@@ -131,10 +131,10 @@ const icone = [
 icone.forEach((oggetto)=> {
     // console.log(oggetto.name);
     let innerHtml = `
-    <div> 
+    <button class="icone_struttura"> 
          <i class="${oggetto.family} ${oggetto.prefix}${oggetto.name} ${oggetto.color}"></i>
          <div> ${oggetto.name} </div>
-     </div>`
+     </button>`
     mainContainer.innerHTML += innerHtml
 })
 
